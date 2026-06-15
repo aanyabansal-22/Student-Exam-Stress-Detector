@@ -25,7 +25,7 @@ The project aims to raise awareness about student mental well-being and demonstr
 ## 📂 Project Structure
 
 ```text
-AI-Based-Student-Exam-Stress-Detector/
+Student-Exam-Stress-Detector/
 │
 ├── index.html              # Login Page
 ├── register.html           # Registration Page
