@@ -40,13 +40,9 @@ text-align:left;
 margin-left:8px;
 }
 
-.show label{
-display:inline;
-margin:0;
-font-size:13px;
-}
-
-input{
+/* Only text and password inputs */
+input[type="text"],
+input[type="password"]{
 width:90%;
 padding:12px;
 margin-top:6px;
@@ -55,6 +51,30 @@ border-radius:10px;
 border:none;
 outline:none;
 font-size:14px;
+}
+
+/* Show Password Alignment */
+.show{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:8px;
+margin-bottom:15px;
+}
+
+.show input{
+width:16px;
+height:16px;
+margin:0;
+padding:0;
+cursor:pointer;
+}
+
+.show label{
+display:inline;
+margin:0;
+font-size:13px;
+cursor:pointer;
 }
 
 button{
@@ -83,21 +103,6 @@ text-decoration:underline;
 font-size:14px;
 }
 
-.show{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:8px;
-font-size:13px;
-margin-bottom:15px;
-cursor:pointer;
-}
-
-.show input{
-width:auto;
-margin:0;
-}
-
 </style>
 </head>
 
@@ -121,7 +126,7 @@ margin:0;
 <input type="checkbox" id="showPassword" onclick="showPass()">
 <label for="showPassword">Show Password</label>
 </div>
-  
+
 <button type="submit">Login</button>
 
 <button type="button"
