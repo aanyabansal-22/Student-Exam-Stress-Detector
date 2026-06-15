@@ -40,6 +40,12 @@ text-align:left;
 margin-left:8px;
 }
 
+.show label{
+display:inline;
+margin:0;
+font-size:13px;
+}
+
 input{
 width:90%;
 padding:12px;
@@ -78,9 +84,18 @@ font-size:14px;
 }
 
 .show{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:8px;
 font-size:13px;
-margin-bottom:10px;
+margin-bottom:15px;
 cursor:pointer;
+}
+
+.show input{
+width:auto;
+margin:0;
 }
 
 </style>
@@ -103,9 +118,10 @@ cursor:pointer;
 <input type="password" id="password" minlength="8" required>
 
 <div class="show">
-<input type="checkbox" onclick="showPass()"> Show Password
+<input type="checkbox" id="showPassword" onclick="showPass()">
+<label for="showPassword">Show Password</label>
 </div>
-
+  
 <button type="submit">Login</button>
 
 <button type="button"
