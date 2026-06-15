@@ -25,12 +25,30 @@ background:rgba(255,255,255,0.20);
 backdrop-filter:blur(15px);
 border-radius:20px;
 box-shadow:0 8px 32px rgba(0,0,0,0.6);
+animation:fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 h1{
 letter-spacing:1px;
-margin-bottom:10px;
+margin-bottom:5px;
 font-size:22px;
+}
+
+.subtitle{
+font-size:13px;
+opacity:0.8;
+margin-bottom:15px;
 }
 
 label{
@@ -40,7 +58,7 @@ text-align:left;
 margin-left:8px;
 }
 
-/* Only text and password inputs */
+/* Text & Password Inputs */
 input[type="text"],
 input[type="password"]{
 width:90%;
@@ -51,6 +69,12 @@ border-radius:10px;
 border:none;
 outline:none;
 font-size:14px;
+transition:0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+box-shadow:0 0 10px rgba(79,140,255,0.7);
 }
 
 /* Show Password Alignment */
@@ -103,6 +127,12 @@ text-decoration:underline;
 font-size:14px;
 }
 
+.footer{
+font-size:11px;
+opacity:0.7;
+margin-top:10px;
+}
+
 </style>
 </head>
 
@@ -110,7 +140,13 @@ font-size:14px;
 
 <div class="box">
 
-<h1>AI BASED STUDENT EXAM STRESS DETECTOR</h1>
+<div style="font-size:50px;">🎓</div>
+
+<h1>Student Exam Stress Detector</h1>
+
+<p class="subtitle">
+Login to analyze your stress levels
+</p>
 
 <hr style="border:0;height:1px;background:white;margin-bottom:15px;">
 
@@ -142,6 +178,10 @@ Forgot Password?
 
 </form>
 
+<div class="footer">
+Created by Aanya Bansal
+</div>
+
 </div>
 
 <script>
@@ -151,8 +191,7 @@ function loginUser(){
 let user=document.getElementById("username").value;
 let pass=document.getElementById("password").value;
 
-if(user=="" || pass=="")
-{
+if(user=="" || pass==""){
 alert("Enter details");
 return false;
 }
