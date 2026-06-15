@@ -1,8 +1,8 @@
-# 🎓 AI-Based Student Exam Stress Detector
+# 🎓 Student Exam Stress Detector
 
 ## 📌 Overview
 
-The **AI-Based Student Exam Stress Detector** is a web-based application designed to help identify and analyze stress levels among students during examination periods. The system allows users to input their thoughts and feelings, analyzes the text for stress-related indicators, and provides feedback along with helpful suggestions to manage stress effectively.
+The **Student Exam Stress Detector** is a web-based application designed to help identify and analyze stress levels among students during examination periods. The system allows users to input their thoughts and feelings, analyzes the text for stress-related indicators, and provides feedback along with helpful suggestions to manage stress effectively.
 
 The project aims to raise awareness about student mental well-being and demonstrate how technology can be used to support academic success and emotional health.
 
